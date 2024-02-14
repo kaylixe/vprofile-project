@@ -1,5 +1,5 @@
 /*
-Jenkinsfile
+Jenkinsfile new
 */
 pipeline {
     agent any
