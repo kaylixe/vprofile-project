@@ -1,6 +1,7 @@
 FROM openjdk:11 AS BUILD_IMAGE
-RUN apt update && apt install maven -y
-RUN git clone https://github.com/devopshydclub/vprofile-project.git
+RUN sudo apt update -y
+RUN sudo apt install maven -y
+RUN git clone https://github.com/kaylixe/vprofile-project.git
 RUN cd vprofile-project && git checkout docker && mvn install
 
 FROM tomcat:9-jre11
